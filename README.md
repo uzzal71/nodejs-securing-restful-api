@@ -39,5 +39,9 @@ What you should know
 "start": "nodemon ./index.js --exec babel-node -e js"
 
 ## Create the user model
+import mongoose from 'mongoose';
+const Schema = mongoose.Schema;
+export const UserSchema = new Schema({});
+
 
 ## Add bcrypt password hashing
