@@ -25,3 +25,13 @@ What you should know
 
 ## Introduction to Postman
 1. https://www.postman.com/
+
+# 2. Setting Up the Node API
+
+## Base project template intro
+
+## Finalize the setup for the project
+
+## Create the user model
+
+## Add bcrypt password hashing
