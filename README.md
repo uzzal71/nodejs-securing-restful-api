@@ -69,6 +69,21 @@ export const loginRequired = (req, res, next) => {
 };
 ```
 ## Add the handlers for registration
+### Open userController.js file
+```
+export const register = (req, res) => {
+    const newUser = new User(req.body);
+    newUser.hashPassword = bcrypt.hashSync(req.body.password, 10);
+    newUser.save((err, user) => {
+        if (err) {
+            return res.status(400).json({ message: err });
+        } else {
+            user.hashPassword = undefined;
+            return res.status(201).json(user);
+        }
+    });
+};
+```
 ## Add the handlers for login
 ## Finalize secured endpoints
 ## Add JWT setup into index
