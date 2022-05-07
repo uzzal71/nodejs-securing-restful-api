@@ -47,3 +47,12 @@ export const UserSchema = new Schema({});
 
 ## Add bcrypt password hashing
 npm i bcrypt jsonwebtoken
+
+# 3. Securing the Node API
+
+## Add the handlers for loginRequired
+## Add the handlers for registration
+## Add the handlers for login
+## Finalize secured endpoints
+## Add JWT setup into index
+## Test the API with Postman
