@@ -4,7 +4,6 @@ import bodyParser from 'body-parser';
 import jsonwebtoken from 'jsonwebtoken';
 import routes from './src/routes/crmRoutes';
 
-
 const app = express();
 const PORT = 3000;
 

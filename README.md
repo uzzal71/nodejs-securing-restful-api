@@ -201,3 +201,16 @@ app.listen(PORT, () =>
 );
 ```
 ## Test the API with Postman
+### npm start
+1. localhost:3000/auth/register
+```
+username:
+email:
+password:
+```
+2. localhost:3000/login
+```
+username:
+email:
+password:
+```
