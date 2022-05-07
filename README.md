@@ -7,3 +7,7 @@ Node.js: Securing RESTful APIs
 3. Sensitive data exposure
 4. XML entities
 5. Broken access control
+
+# Introduction to OWASP
+1. https://owasp.org/
+2. https://en.wikipedia.org/wiki/OWASP
