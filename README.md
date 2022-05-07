@@ -1,6 +1,12 @@
 # nodejs-securing-restful-api
 Node.js: Securing RESTful APIs
 
+# 0. Introduction
+## Securing Node RESTful APIs
+Securing Node RESTful APIs
+## What you should know
+What you should know
+
 # 1. Setting Up
 ## Overview of the security threats
 ### Top Five Security Threats
