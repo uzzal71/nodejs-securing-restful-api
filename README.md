@@ -45,3 +45,4 @@ export const UserSchema = new Schema({});
 
 
 ## Add bcrypt password hashing
+npm i bcrypt jsonwebtoken
