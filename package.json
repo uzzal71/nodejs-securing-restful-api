@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-securing-restful-api",
+  "version": "1.0.0",
+  "description": "Nodejs security restful api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzzal71/nodejs-securing-restful-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongoose",
+    "body-parser",
+    "babel-cli",
+    "babel-preset-env",
+    "pabel-preset-stage-0"
+  ],
+  "author": "Uzzal Roy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uzzal71/nodejs-securing-restful-api/issues"
+  },
+  "homepage": "https://github.com/uzzal71/nodejs-securing-restful-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}

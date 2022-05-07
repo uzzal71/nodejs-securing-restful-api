@@ -29,7 +29,11 @@ What you should know
 # 2. Setting Up the Node API
 
 ## Base project template intro
-
+1. Install mongodb: https://www.mongodb.com/
+2. Install compass: https://www.mongodb.com/products/compass OR
+3. Install Robo 3T: https://robomongo.org/
+4. Create a folder in your desktop "security"
+5. npm init && npm install body-parser express mongoose nodemon && npm i --save-dev babel-cli babel-preset-env babel-preset-stage-0
 ## Finalize the setup for the project
 
 ## Create the user model
