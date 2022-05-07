@@ -11,3 +11,6 @@ Node.js: Securing RESTful APIs
 # Introduction to OWASP
 1. https://owasp.org/
 2. https://en.wikipedia.org/wiki/OWASP
+
+# Introduction to JWT
+1. https://jwt.io/
