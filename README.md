@@ -34,7 +34,9 @@ What you should know
 3. Install Robo 3T: https://robomongo.org/
 4. Create a folder in your desktop "security"
 5. npm init && npm install body-parser express mongoose nodemon && npm i --save-dev babel-cli babel-preset-env babel-preset-stage-0
+
 ## Finalize the setup for the project
+"start": "nodemon ./index.js --exec babel-node -e js"
 
 ## Create the user model
 
