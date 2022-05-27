@@ -28,6 +28,14 @@ import {
     deleteDesignation 
 } from '../controllers/designationController';
 
+import { 
+    addNewTax, 
+    getTaxs, 
+    getTaxWithID, 
+    updateTax,
+    deleteTax 
+} from '../controllers/taxController';
+
 const routes = (app) => {
     app.route('/contacts')
     .get((req, res, next) => {
@@ -91,6 +99,27 @@ const routes = (app) => {
 
     // delete request
     .delete(loginRequired, deleteDesignation);
+
+    app.route('/taxs')
+    .get((req, res, next) => {
+        // middleware
+        console.log(`Request from: ${req.originalUrl}`)
+        console.log(`Request type: ${req.method}`)
+        next();
+    }, loginRequired, getTaxs)
+    
+    // POST endpoint
+    .post(loginRequired, addNewTax);
+
+    app.route('/tax/:taxId')
+    // get specific tax
+    .get(loginRequired, getTaxWithID)
+    
+    // put request
+    .put(loginRequired, updateTax)
+
+    // delete request
+    .delete(loginRequired, deleteTax);
 
     // registration route
     app.route('/auth/register')
