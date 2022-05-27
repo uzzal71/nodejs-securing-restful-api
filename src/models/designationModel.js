@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-export const DepartmentSchema = new Schema({
+export const DesignationSchema = new Schema({
     name: {
         type: String,
         required: true
