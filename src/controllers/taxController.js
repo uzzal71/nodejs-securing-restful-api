@@ -13,3 +13,12 @@ export const addNewTax = (req, res) => {
         res.json(tax);
     });
 };
+
+export const getTaxs = (req, res) => {
+    Tax.find({}, (err, tax) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json(tax);
+    });
+};
