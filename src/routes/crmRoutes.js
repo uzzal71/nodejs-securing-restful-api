@@ -50,6 +50,27 @@ const routes = (app) => {
     // delete request
     .delete(loginRequired, deleteContact);
 
+    app.route('/departments')
+    .get((req, res, next) => {
+        // middleware
+        console.log(`Request from: ${req.originalUrl}`)
+        console.log(`Request type: ${req.method}`)
+        next();
+    }, loginRequired, getDepartments)
+    
+    // POST endpoint
+    .post(loginRequired, addNewDepartment);
+
+    app.route('/department/:departmentId')
+    // get specific contact
+    .get(loginRequired, getDepartmentWithID)
+    
+    // put request
+    .put(loginRequired, updateDepartment)
+
+    // delete request
+    .delete(loginRequired, deleteDepartment);
+
     // registration route
     app.route('/auth/register')
         .post(register);
