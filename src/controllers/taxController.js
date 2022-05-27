@@ -39,4 +39,13 @@ export const updateTax = (req, res) => {
         }
         res.json(tax);
     })
-}
+};
+
+export const deleteTax = (req, res) => {
+    Tax.remove({ _id: req.params.taxId }, (err, tax) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json({ message: 'Successfully deleted tax'});
+    })
+};
