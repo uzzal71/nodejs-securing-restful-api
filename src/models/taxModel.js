@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-export const DesignationSchema = new Schema({
+export const TaxSchema = new Schema({
     name: {
         type: String,
         required: true
