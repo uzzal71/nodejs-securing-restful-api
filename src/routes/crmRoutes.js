@@ -45,17 +45,17 @@ const routes = (app) => {
         next();
     }, loginRequired, getContacts)
     
-    // POST endpoint
+    // Contact POST endpoint
     .post(loginRequired, addNewContact);
 
     app.route('/contact/:contactId')
     // get specific contact
     .get(loginRequired, getContactWithID)
     
-    // put request
+    // contact put request
     .put(loginRequired, updateContact)
 
-    // delete request
+    // contact delete request
     .delete(loginRequired, deleteContact);
 
     app.route('/departments')
@@ -66,7 +66,7 @@ const routes = (app) => {
         next();
     }, loginRequired, getDepartments)
     
-    // POST endpoint
+    // Department POST endpoint
     .post(loginRequired, addNewDepartment);
 
     app.route('/department/:departmentId')
@@ -87,7 +87,7 @@ const routes = (app) => {
         next();
     }, loginRequired, getDesignations)
     
-    // POST endpoint
+    // Designation POST endpoint
     .post(loginRequired, addNewDesignation);
 
     app.route('/designation/:designationId')
@@ -108,7 +108,7 @@ const routes = (app) => {
         next();
     }, loginRequired, getTaxs)
     
-    // POST endpoint
+    // Tax POST endpoint
     .post(loginRequired, addNewTax);
 
     app.route('/tax/:taxId')
