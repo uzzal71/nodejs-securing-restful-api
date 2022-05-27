@@ -22,3 +22,12 @@ export const getTaxs = (req, res) => {
         res.json(tax);
     });
 };
+
+export const getTaxWithID = (req, res) => {
+    Tax.findById(req.params.taxId, (err, tax) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json(tax);
+    });
+}
