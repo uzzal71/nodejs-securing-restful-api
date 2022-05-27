@@ -20,6 +20,14 @@ import {
     deleteDepartment 
 } from '../controllers/departmentController';
 
+import { 
+    addNewDesignation, 
+    getDesignations, 
+    getDesignationWithID, 
+    updateDesignation,
+    deleteDesignation 
+} from '../controllers/designationController';
+
 const routes = (app) => {
     app.route('/contacts')
     .get((req, res, next) => {
