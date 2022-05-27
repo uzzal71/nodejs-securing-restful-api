@@ -5,7 +5,20 @@ import {
     updateContact,
     deleteContact 
 } from '../controllers/crmController';
-import { login, register, loginRequired } from '../controllers/userControllers'
+
+import { 
+    login, 
+    register, 
+    loginRequired 
+} from '../controllers/userControllers'
+
+import { 
+    addNewDepartment, 
+    getDepartments, 
+    getDepartmentWithID, 
+    updateDepartment,
+    deleteDepartment 
+} from '../controllers/departmentController';
 
 const routes = (app) => {
     app.route('/contacts')
