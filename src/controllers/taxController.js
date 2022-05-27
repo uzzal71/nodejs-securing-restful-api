@@ -30,4 +30,13 @@ export const getTaxWithID = (req, res) => {
         }
         res.json(tax);
     });
+};
+
+export const updateTax = (req, res) => {
+    Tax.findOneAndUpdate({ _id: req.params.taxId}, req.body, { new: true }, (err, tax) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json(tax);
+    })
 }
