@@ -1,51 +1,51 @@
 import mongoose from 'mongoose';
-import { DepartmentSchema } from '../models/departmentSchema';
+import { DesignationSchema } from '../models/designationSchema';
 
-const Department = mongoose.model('Department', DepartmentSchema);
+const Designation = mongoose.model('Designation', DesignationSchema);
 
-export const addNewDepartment= (req, res) => {
-    let newDepartment= new Department(req.body);
+export const addNewDesignation= (req, res) => {
+    let newDesignation= new Designation(req.body);
 
-    newDepartment.save((err, department) => {
+    newDesignation.save((err, designation) => {
         if (err) {
             res.send(err);
         }
-        res.json(department);
+        res.json(designation);
     });
 };
 
-export const getDepartments = (req, res) => {
-    Department.find({}, (err, department) => {
+export const getDesignations = (req, res) => {
+    Designation.find({}, (err, designation) => {
         if (err) {
             res.send(err);
         }
-        res.json(department);
+        res.json(designation);
     });
 };
 
-export const getDepartmentWithID = (req, res) => {
-    Department.findById(req.params.departmentId, (err, department) => {
+export const getDesignationWithID = (req, res) => {
+    Designation.findById(req.params.designationId, (err, designation) => {
         if (err) {
             res.send(err);
         }
-        res.json(department);
+        res.json(designation);
     });
 }
 
-export const updateDepartment= (req, res) => {
-    Department.findOneAndUpdate({ _id: req.params.departmentId}, req.body, { new: true }, (err, department) => {
+export const updateDesignation= (req, res) => {
+    Designation.findOneAndUpdate({ _id: req.params.designationId}, req.body, { new: true }, (err, designation) => {
         if (err) {
             res.send(err);
         }
-        res.json(department);
+        res.json(designation);
     })
 }
 
-export const deleteDepartment= (req, res) => {
-    Department.remove({ _id: req.params.departmentId }, (err, department) => {
+export const deleteDesignation= (req, res) => {
+    Designation.remove({ _id: req.params.designationId }, (err, designation) => {
         if (err) {
             res.send(err);
         }
-        res.json({ message: 'Successfully deleted department'});
+        res.json({ message: 'Successfully deleted designation'});
     })
 }
