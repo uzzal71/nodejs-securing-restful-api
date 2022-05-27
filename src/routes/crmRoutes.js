@@ -70,13 +70,13 @@ const routes = (app) => {
     .post(loginRequired, addNewDepartment);
 
     app.route('/department/:departmentId')
-    // get specific contact
+    // get specific department
     .get(loginRequired, getDepartmentWithID)
     
-    // put request
+    // department put request
     .put(loginRequired, updateDepartment)
 
-    // delete request
+    // department delete request
     .delete(loginRequired, deleteDepartment);
 
     app.route('/designations')
@@ -91,13 +91,13 @@ const routes = (app) => {
     .post(loginRequired, addNewDesignation);
 
     app.route('/designation/:designationId')
-    // get specific contact
+    // get specific designation
     .get(loginRequired, getDesignationWithID)
     
-    // put request
+    // designation put request
     .put(loginRequired, updateDesignation)
 
-    // delete request
+    // designation delete request
     .delete(loginRequired, deleteDesignation);
 
     app.route('/taxs')
@@ -115,10 +115,10 @@ const routes = (app) => {
     // get specific tax
     .get(loginRequired, getTaxWithID)
     
-    // put request
+    // tax put request
     .put(loginRequired, updateTax)
 
-    // delete request
+    // tax delete request
     .delete(loginRequired, deleteTax);
 
     // registration route
