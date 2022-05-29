@@ -11,4 +11,8 @@ export const ProvidentFundSchema = new Schema({
         type: Double,
         required: true
     },
+    created_date: {
+        type: Date,
+        default: Date.now 
+     }
 });
