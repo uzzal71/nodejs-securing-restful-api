@@ -15,7 +15,7 @@ export const CompanySchema = new Schema({
         type: String,
         required: true
     },
-    phone: {
+    address: {
         type: String,
         required: true
     },
