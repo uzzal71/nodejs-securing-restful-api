@@ -11,6 +11,10 @@ export const CompanySchema = new Schema({
         type: String,
         required: true
     },
+    phone: {
+        type: String,
+        required: true
+    },
     created_date: {
         type: Date,
         default: Date.now 
